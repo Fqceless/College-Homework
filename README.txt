@@ -6,7 +6,7 @@ If you somehow found this and you are taking CS-2210, Data Structes, at Cedarvil
 Feel free to use it to get ideas, but DO NOT paste my code into your program.
 
 If you are an employer or some professional person:
-Welcome! This is my archive of Homework projects I did for CS-2210 in the Fall semester of 20222.
+Welcome! This is my archive of Homework projects I did for CS-2210 in the Fall semester of 2022.
 This is one of the classes that started off my sophomore year! 
 Now that all of the pre-requisites are out of the way, I have time to spend on my coding classes!
 This class focused on two things:
