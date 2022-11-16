@@ -5,5 +5,6 @@ But this time in Python!
 With a couple more requirements:
 -Implement book abbreviations with the .csv file
 -Verse print-outs must follow 80 column rule, you must write that code yourself
+-Code must be "Pythonic" (don't just paste in your C++ code)
 
 Sidenote: I'm very proud of my function for printing under 80 cols. Recursion is so cool.
