@@ -6,3 +6,4 @@ GCD.java, Factorial.java, and NegativeNumberException.java are in the "numeric" 
 
 Also updated the factorial class to throw an exception if it is given negative numbers.
 mainFrame.java was created by me but through the NetBeans Swing GUI feature who pasted the foundational code for me.
+lines 234-281 in mainFrame.java are the line I coded in manually (not the calls but the functions of the calls).
