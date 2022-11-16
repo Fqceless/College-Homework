@@ -6,6 +6,6 @@ If you somehow found this and you are taking CS-1210, C++, at Cedarville, you co
 Feel free to use it to get ideas, but DO NOT paste my code into your program.
 
 If you are an employer or some professional person:
-Welcome! This is my archive of Homework projects I did for CS-1210 in the Fall semester of 2021
+Welcome! This is my archive of Homework projects I did for CS-1210 in the Fall semester of 2021.
 This was my first college coding class, so the projects are a little rough, but they get the job done! (Mostly!)
 Feel free to look at it to get a good idea for how I code, but if you want a better idea, look at my more recent classes.
