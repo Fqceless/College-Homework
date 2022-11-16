@@ -10,3 +10,5 @@ Welcome! This is my archive of Homework projects I did for CS-1220 in the Spring
 This was my second college coding class, and it focused more on classes and more in-depth concepts in C++.
 I did pretty well in this class, but unfortunatly I was also taking Calc II and Physics I, so I couldn't focus very much on this class.
 Hope you enjoy parsing my code!
+
+Note: HW4, 6, and 7 were on Zybooks and are lost to time (and were also just short and easy)
