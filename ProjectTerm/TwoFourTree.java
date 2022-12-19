@@ -5,7 +5,7 @@ import java.util.Random;
  * Description:  Creates a working 2-4 Tree
  * Copyright:    Copyright (c) 2001
  * Class:        Data Structures in Java
- * @author       Christopher LaFave and Preston Freeman
+ * @author       Christopher LaFave and [Partner]
  * @version      1.0
  */
 public class TwoFourTree
