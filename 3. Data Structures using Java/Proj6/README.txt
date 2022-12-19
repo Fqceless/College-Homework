@@ -4,3 +4,6 @@ Created a program that can walk a binary tree with In-order, Pre-order, and Post
 BinaryTree is implemented with STNodes, which have a left child and a sibling (instead of a left and right child).
 We were given almost all of these files, my job was to implement ListBinaryTree (in ListBinaryTree.java)
 and create the three "...Walk" classes by extending the EulerTour class.
+
+Grade: 65/100
+did a lot of things exactly how I shouldn't have
