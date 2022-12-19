@@ -7,3 +7,5 @@ With a couple more requirements (same as Lab 4):
 -Verse print-outs must follow 80 column rule, you must write that code yourself
 
 Sidenote: I'm very proud of my function for printing under 80 cols. Recursion is so cool.
+
+Grade: 100/100
