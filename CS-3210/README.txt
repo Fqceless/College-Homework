@@ -9,3 +9,6 @@ If you are an employer or some professional person:
 Welcome! This is the other coding class I took in the Fall 2022 semester.
 This class focused on understanding multiple different progamming languages at a basic level.
 Hope you enjoy the projects!
+
+Note: L5 was an android studios tutorial, and that has way too many files, so they are not listed here.
+It was in Kotlin if you were wondering.
