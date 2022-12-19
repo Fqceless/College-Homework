@@ -9,3 +9,5 @@ It took probably around 20+ hours of pure coding hours to get this done, on top 
 In the end, it works exactly how it should, and looks pretty clean too. I'm sort of proud of it.
 
 If you are in this class reading this, please, start this early. It doesn't seem overwhelming until you realize how conceptually hard this project is.
+
+Grade: 100/100
