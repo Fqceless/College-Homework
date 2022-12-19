@@ -5,3 +5,5 @@ We had to modify battleship_main.cpp to get a game of battleship working and pla
 Most of the comments in battleship_main.cpp were guides for our code.
 
 battle, battleship.o, and battleship_main.o are executables.
+
+Grade: 40/40
