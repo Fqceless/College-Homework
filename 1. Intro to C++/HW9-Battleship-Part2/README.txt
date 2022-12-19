@@ -12,3 +12,5 @@ It was supposed to loop find->search->destroy->find etc.
 But there was a bug that broke it to only do find usually halfway through the game.
 
 I still got 3rd in the class tho lol.
+
+Grade: 100/100
