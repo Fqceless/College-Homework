@@ -9,3 +9,5 @@ The wires and the gates can talk to eachother, and they both drive the events.
 
 We procrastinated a lot and this program was made from scratch, 
 so it has a lot of bugs and doesn't work on some of the more complicated files.
+
+Grade: 102/120
