@@ -9,3 +9,6 @@ If you are an employer or some professional person:
 Welcome! This is one of the many coding classes I took in Spring of 2023.
 This class focused on learning how to make web pages and websites.
 Hope you enjoy the projects!
+
+Note:
+All of the projects in this class are a group project, so partial credit goes to Joshua Curry for being my group partner.
