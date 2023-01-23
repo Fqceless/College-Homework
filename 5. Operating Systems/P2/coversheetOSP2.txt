@@ -1,0 +1,31 @@
+HW: P2
+Class/Section: Operating Systems Section 2
+Name: Christopher LaFave
+
+Requirements: Restate the problem specification in your own words.
+-Create a server and a client that can pass messages back and forth.
+-Server must modify the message before passing it back to the client
+-Server must run until explicitly quit with ^C
+-Client must take input from the command line
+
+Design: How did you attack the problem? What choices did you make and why?
+-I first copied over the sample code to see that it worked.
+-I then read through how it worked to see what I needed to change
+-After changing the port numbers, client loop, etc., it worked properly.
+-I then added more requirements, like the modfication and argc error catching.
+
+Security Analysis: State the potential security vulnerabilities of your design.  How could these vulnerabilities be exploited and what would be the impact?  
+-The server can currently be connected to from literally any IP, so it's pretty easy to intercept the message.
+
+Testing: Explain how you tested your program, enumerating the tests if possible. Explain why your test set was sufficient to believe the software is working properly.
+-I tested it with differing amounts of arguments for my argc testing and with different messages: "test" "This is a secret message" "The quick brown fox jumps over the lazy dog".
+
+Summary: Present your results. Did it work properly? Are there any limitations?
+-They do run properly.
+
+Lessons Learned: List any lessons learned. What might have you done differently if you were going to solve this problem again?
+-I learned a lot about how servers and clients communicate with eachother, and how to use that to my advantage.
+
+I wrote this code and it runs properly:
+Christopher LaFave
+
