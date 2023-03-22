@@ -10,5 +10,8 @@ Welcome! This is one of the many coding classes I took in Spring of 2023.
 This class focused on learning how to make web pages and websites.
 Hope you enjoy the projects!
 
+Link to all the projects as a webpage:
+http://judah.cedarville.edu/~laFave/cs3220.html
+
 Note:
 All of the projects in this class are a group project, so partial credit goes to Joshua Curry for being my group partner.
