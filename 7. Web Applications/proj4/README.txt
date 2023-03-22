@@ -1,2 +1,3 @@
-Working web apps repo for group work on the projects
-Will move to my regular college work repo when each project is finished.
+Project 4 for CS-3220, Web Applications
+
+Created an entire MySQL back-end database and implemented it into our webpage with PHP calls and JavaScript handling.
