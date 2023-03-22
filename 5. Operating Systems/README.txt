@@ -8,4 +8,5 @@ Feel free to use it to get ideas, but DO NOT paste my code into your program.
 If you are an employer or some professional person:
 Welcome! This is one of the many coding classes I took in Spring of 2023.
 This class focused on understanding operating systems and how they work.
+This class was mostly conceptual, so there aren't that many projects.
 Hope you enjoy the projects!
