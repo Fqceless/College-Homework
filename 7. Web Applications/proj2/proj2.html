@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Web Apps Project 1</title>
+    <link rel="shortcut icon" type="image/x-icon" href="./Pictures/GRAPElogo.png">   
+    <link rel="stylesheet" href="./CSS/inline1.css">
+    <script src="./js/basicFunctions.js"></script>
+    <script src="./js/objects.js"></script>
+</head>
+<body>
+
+    <div class="grid-container">
+        <div class="header">
+            <div>
+                <h1>VAPE</h1>
+                <p><strong>V</strong>alentine's <strong>A</strong>cademic <strong>P</strong>lanning <strong>E</strong>nvironment</p>
+            </div>
+
+            <div class="studentInfo">                  
+
+                    <div id="infoStudent">
+                        <p class="infoP"><strong>Student:</strong> Joe Mamma</p>
+                        
+                    </div>
+
+                    <div id="infoMajor">
+                        <p class="infoP"><strong>Major:</strong> Computer Science</p>
+                    </div>
+
+                    <div id="infoCatalog">
+                        <p class="infoP"><strong>Catalog:</strong> 1994</p>
+                    </div>
+
+                    <div id="infoMinor">
+                        <p class="infoP"><strong>Minor:</strong> Bible</p>
+                    </div>
+                
+            </div>
+            
+            <div class="headerButtons">
+                
+                
+                    <button>
+                        <img src="./Pictures/powerOff.png" alt="log out"><br>
+                        <strong>Log Out</strong>
+                    </button>
+                
+                <div class="options">
+                    <button>
+                        <img src="./Pictures/settingsCog.png" alt="options"><br>
+                        <strong>Options</strong>
+                    </button>
+                    <div class="options-list">
+                        <button>Create Plan</button>
+                        <button>Manage Plan</button>
+                        <button>Show Grades</button>
+                        <button>Change Theme</button>
+                    </div>
+                </div> 
+                
+                    <button>
+                        <img src="./Pictures/saveAs.png" alt="save" onclick="clickCounter()"><br>
+                        <strong>Save</strong>
+                    </button>
+                
+            </div>
+        </div>
+
+        <div class="courseReqs" ondrop="drop(event)" ondragover="allowDrop(event)">
+            <p>Placeholder</p>
+            
+        </div>
+
+        <div class="schedule">        
+            <div class="grid-Schedule" ondrop="drop(event)" ondragover="allowDrop(event)">
+                <div class="Monthbox" id="Tranfer">
+                    <h1>Transfered credits</h1>
+                </div>
+                <script src="./js/monthboxInsert.js"></script>
+            </div>
+        </div>
+
+        <div class="validation">
+            <h1>Links:</h1>
+            <ul>
+                <li><a href="http://judah.cedarville.edu/~laFave/cs3220.html">Chris LaFave<br></a></li>
+                <li><a href="http://judah.cedarville.edu/~curry/cs3220.html">Josh Curry<br></a></li>
+                <li><a href="http://judah.cedarville.edu/">Home Page<br></a></li>
+            </ul>
+        </div>
+
+        <div class="courseFinder">
+            <div id="result"></div>
+            <form id="form" method='post' action="http://judah.cedarville.edu/echo.php">
+                <input type="text" id="fname" name="fname" placeholder="First Name">
+                <input type="text" id="lname" name="lname" placeholder="Last Name">
+                <input type="text" id="startYear" name="startYear" placeholder="20XX Starting Year">
+                <input type="email" id="email" name="email" placeholder="Email">
+
+                <input type="submit" value="Submit" id="done">
+              </form>
+              <script src="./js/getInformation.js"></script>
+        </div>
+    </div>
+</body>
+
+</html>

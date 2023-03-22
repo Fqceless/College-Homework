@@ -1,0 +1,202 @@
+/*General CSS Styles*/
+html {
+    margin:0;
+    padding:0;
+    font:normal normal normal 18px/24px 'Helvetica Neue',Arial,sans-serif;
+    color:#333;
+   }
+   body {
+    margin:0;
+    padding:0;
+    background:0 0
+   }
+   a {
+       color: blue;
+   }
+   a:hover{
+       color:purple;
+   }
+   /*Main Grid CSS Styles*/
+   .grid-container {
+       display: grid;
+       grid-template-areas:
+           'header header header header header header header'
+           'upperleft upperright upperright upperright upperright upperright upperright'
+           'bottomleft bottomright bottomright bottomright bottomright bottomright bottomright';
+       gap: 10px;
+       background-color: #2c1100;
+       padding: 10px;
+   }
+   .grid-container > div {
+       background-color: #e491e4;
+   }
+   
+   .options {
+       display: grid;
+       position: relative;
+     }
+     .options-list {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: #f9f9f900;
+        
+        z-index: 1;
+        display: none;
+    }
+      
+    .options:hover .options-list {
+        display: block;
+    }
+      
+    .options-list button {
+        display: flex;
+        border: none;
+        background-color: #ff0000;
+        color: white;
+        cursor: pointer;
+        
+    }
+   
+   /*Header CSS Styles*/
+   .header {
+       grid-area: header;
+       display: grid;
+       grid-template-areas: "headerLogo studentInfo headerButtons";
+       height: 100px;
+   }
+   .header h1{
+       font-size: 45px;
+       font-family: "Comic Sans MS", "Comic Sans";
+       margin: 20px;
+   }
+   .header p{
+       margin: 0px;
+       margin-left: 15px;
+   }
+   .studentInfo{
+       display: grid;
+       grid-template-areas: 
+           'infoStudent infoMajor'
+           'infoBottom infoMinor';
+   }
+   #infoStudent{
+       display: flex;
+       align-self: flex-end;
+   }
+   #infoMajor{
+       display: flex;
+       align-self: flex-end;
+   }
+   #infoCatalog{
+       display: flex;
+       align-self: flex-start;
+   }
+   #infoMinor{
+       display: flex;
+       align-self: flex-start;
+   }
+   .headerButtons{
+       margin: 5px;
+       display: grid;
+       gap: 5px;
+       grid-template-areas: 'headButton headButton headButton';
+   }
+   .headerButtons button{
+       border-radius: 15px;
+       border: 2px solid;
+       padding: 5px;
+       background-color: rgba(202, 121, 178, 0.98);
+   }
+   .headerButtons button:hover{
+       background-color: rgba(39, 59, 243, 0.98);
+   }
+   
+   /*Upper Left Section CSS styles*/
+   .courseReqs {
+       grid-area: upperleft;
+   }
+   
+   /*Upper Right Section CSS Styles*/
+   .schedule {
+       grid-area: upperright;
+   }
+   .grid-Schedule {
+       display: grid;
+       grid-template-areas:
+           'Monthbox Monthbox Monthbox'
+           'Monthbox Monthbox Monthbox'
+           'Monthbox Monthbox Monthbox'
+           'Monthbox Monthbox Monthbox';
+       gap: 10px;
+       background-color: #df3b51;
+       padding: 3px;
+   }
+   .grid-Schedule div {
+       background-color: rgba(245, 179, 247, 0.98);
+       text-align: center;
+       padding: 5px 0;
+   }
+   .Monthbox{
+       border-radius: 20px;
+       border: 2px solid #59197e;
+       height: 15vmin;
+       display: grid;
+       font-size: 15px;
+   }
+   .Monthbox h1{
+       text-decoration: underline solid;
+       font-size: 18px;
+       margin: 5px;
+   }
+   .Monthbox li{
+       text-align: left;
+   }
+   
+   /*Bottom Left Section CSS Styles*/
+   .validation {
+       grid-area: bottomleft;
+   }
+   .validation h1{
+       text-align: center;
+       font-size: 24px; 
+   }
+   
+   /*Bottom Right Section CSS Styles*/
+   .courseFinder {
+       grid-area: bottomright;
+   }
+   
+   /*drag boxes*/
+   #testdrag {
+       position: absolute;
+       z-index: 9;
+       background-color: rgb(221, 136, 187);
+       border: 3px solid rgb(224, 48, 224);
+       text-align: center;
+     }
+     
+   #testdragheader {
+       padding: 10px;
+       cursor: move;
+       z-index: 10;
+       background-color: rgb(83, 40, 6);
+       color: #fff;
+     }
+   .basicDragbox{
+       position: absolute;
+       z-index: 9;
+       background-color: rgb(241, 184, 219);
+       border: 3px solid rgb(209, 74, 198);
+       text-align: center;
+     }
+     
+   .basicDragboxheader {
+       padding: 10px;
+       cursor: move;
+       z-index: 10;
+       background-color: rgb(2, 148, 9);
+       color: #fff;
+     }
+   
