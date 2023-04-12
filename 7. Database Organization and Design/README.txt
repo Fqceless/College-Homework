@@ -9,5 +9,5 @@ If you are an employer or some professional person:
 Welcome! This is one of the many coding classes I took in Spring of 2023.
 This class focused conceptually understanding databases and how they are made, diagramed, and function.
 We also learned how to use SQL/MySQL at a foundational level.
-As it was mostly conceptual, there wasn't many projects.
+As it was mostly conceptual, there weren't many projects.
 Hope you enjoy the projects!
