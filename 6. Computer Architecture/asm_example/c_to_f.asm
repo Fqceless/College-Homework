@@ -1,4 +1,4 @@
-;; Chris & Sam
+;; Chris, Josh, Sam, Issac
 
 
 
@@ -34,38 +34,35 @@ int 21h
           
           
 ;start your code here
+
+;grab input, number is in bh & bl as ascii
 mov ah, 1
 int 21h
 mov bh, al
 int 21h 
 mov bl, al
 
+;convert input to decimal
 sub bh, 30h
 sub bl, 30h  
 
+;push first and second digits into one number at al
 mov al, bh  
 mov dl, 10d
 mul dl
 add al, bl
 
+;1.5*C + 32 = F 
 mov dl, 18d
 mul dl
 mov dl, 10d
 div dl
 add al, 32d
 
-mov dl, al
+;print function later grabs from bh
 mov bh, al
 
-
-;1.5*C + 32 = F 
-
-
-
-
-
-
-
+;end of non-template code
 
 mov ah, 2
        
