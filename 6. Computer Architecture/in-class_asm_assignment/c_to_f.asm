@@ -52,7 +52,7 @@ mov dl, 10d
 mul dl
 add al, bl
 
-;1.5*C + 32 = F 
+;1.8*C + 32 = F 
 mov dl, 18d
 mul dl
 mov dl, 10d
