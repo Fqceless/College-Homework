@@ -1,3 +1,4 @@
-Project 1 for EGCP-3210, Computer Architecture
+Assembly Assignment for EGCP-3210, Computer Architecture
 
-Creating a computer in CedarLogic that can run pre-defined commands and test files.
+Had an hour to write the code that grabs an input from the user and stores the conversion from celsius to fahrenheit.
+If we got it done, we got extra credit.
