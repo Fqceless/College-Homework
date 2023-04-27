@@ -1,0 +1,67 @@
+﻿@model Project53.Areas.Identity.Data.ThePlan
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>Create</h1>
+
+<h4>ThePlan</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Id" class="control-label"></label>
+                <input asp-for="Id" class="form-control" />
+                <span asp-validation-for="Id" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="User" class="control-label"></label>
+                <select asp-for="User" class ="form-control" asp-items="ViewBag.User"></select>
+            </div>
+            <div class="form-group">
+                <label asp-for="Name" class="control-label"></label>
+                <input asp-for="Name" class="form-control" />
+                <span asp-validation-for="Name" class="text-danger"></span>
+            </div>
+            <div class="form-group form-check">
+                <label class="form-check-label">
+                    <input class="form-check-input" asp-for="IsDefault" /> @Html.DisplayNameFor(model => model.IsDefault)
+                </label>
+            </div>
+            <div class="form-group">
+                <label asp-for="Major" class="control-label"></label>
+                <select asp-for="Major" class ="form-control" asp-items="ViewBag.Major"></select>
+            </div>
+            <div class="form-group">
+                <label asp-for="Dmajor" class="control-label"></label>
+                <select asp-for="Dmajor" class ="form-control" asp-items="ViewBag.Dmajor"></select>
+            </div>
+            <div class="form-group">
+                <label asp-for="Minor" class="control-label"></label>
+                <select asp-for="Minor" class ="form-control" asp-items="ViewBag.Minor"></select>
+            </div>
+            <div class="form-group">
+                <label asp-for="Dminor" class="control-label"></label>
+                <select asp-for="Dminor" class ="form-control" asp-items="ViewBag.Dminor"></select>
+            </div>
+            <div class="form-group">
+                <label asp-for="CatYear" class="control-label"></label>
+                <select asp-for="CatYear" class ="form-control" asp-items="ViewBag.CatYear"></select>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

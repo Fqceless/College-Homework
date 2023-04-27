@@ -1,0 +1,13 @@
+
+*.cache
+*.json
+*.json
+*.cache
+*.pdb
+*.dll
+.vs/Project53/v17/.suo
+*.vsidx
+*.vsidx
+*.exe
+*.cache
+*.editorconfig

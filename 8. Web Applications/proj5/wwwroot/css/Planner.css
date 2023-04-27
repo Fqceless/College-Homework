@@ -1,0 +1,198 @@
+﻿/*General CSS Styles*/
+html {
+    margin: 0;
+    padding: 0;
+    font: normal normal normal 18px/24px 'Helvetica Neue',Arial,sans-serif;
+    color: #333;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: 0 0
+}
+
+a {
+    color: blue;
+}
+
+    a:hover {
+        color: orange;
+    }
+/*Main Grid CSS Styles*/
+.grid-container {
+    display: grid;
+    grid-template-areas:
+        'header header header header header header header'
+        'upperleft upperright upperright upperright upperright upperright upperright'
+        'bottomleft bottomright bottomright bottomright bottomright bottomright bottomright';
+    gap: 10px;
+    background-color: #531864ff;
+    padding: 10px;
+}
+
+    .grid-container > div {
+        background-color: #fbd8b2;
+    }
+
+.options {
+    display: grid;
+    position: relative;
+}
+
+.options-list {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: #2adb89;
+    z-index: 1;
+    display: none;
+}
+
+.options:hover .options-list {
+    display: block;
+}
+
+.options-list button {
+    display: flex;
+    border: none;
+    background-color: #f4a261;
+    color: white;
+    cursor: pointer;
+}
+
+/*Header CSS Styles*/
+.header {
+    grid-area: header;
+    display: grid;
+    grid-template-areas: "headerLogo studentInfo headerButtons";
+    height: auto;
+}
+
+    .header h1 {
+        font-size: 45px;
+        font-family: "Comic Sans MS", "Comic Sans";
+        margin: 20px;
+    }
+
+    .header p {
+        margin: 0px;
+        margin-left: 15px;
+    }
+
+.studentInfo {
+    display: grid;
+    grid-template-areas:
+        'infoStudent infoMajor'
+        'infoBottom infoMinor';
+}
+
+#infoStudent {
+    display: flex;
+    align-self: flex-end;
+}
+
+#infoMajor {
+    display: flex;
+    align-self: flex-end;
+}
+
+#infoCatalog {
+    display: flex;
+    align-self: flex-start;
+}
+
+#infoMinor {
+    display: flex;
+    align-self: flex-start;
+}
+
+.headerButtons {
+    margin: 5px;
+    display: grid;
+    gap: 5px;
+    grid-template-areas: 'headButton headButton headButton';
+}
+
+    .headerButtons button {
+        border-radius: 15px;
+        border: 2px solid;
+        padding: 5px;
+        background-color: #be52dd;
+    }
+
+        .headerButtons button:hover {
+            background-color: #fb69cbcf;
+        }
+
+/*Upper Left Section CSS styles*/
+.courseReqs {
+    grid-area: upperleft;
+}
+
+/*Upper Right Section CSS Styles*/
+.schedule {
+    grid-area: upperright;
+}
+
+.grid-Schedule {
+    display: grid;
+    grid-template-areas:
+        'Monthbox Monthbox Monthbox'
+        'Monthbox Monthbox Monthbox'
+        'Monthbox Monthbox Monthbox'
+        'Monthbox Monthbox Monthbox';
+    gap: 10px;
+    background-color: #264653;
+    padding: 3px;
+    color: aliceblue;
+}
+
+    .grid-Schedule div {
+        display: grid;
+        background-color: #fbd8b2;
+        text-align: center;
+        padding: 5px 0;
+    }
+
+.Monthbox {
+    border-radius: 20px;
+    border: 2px solid #e76f51;
+    display: grid;
+    font-size: 15px;
+}
+
+    .Monthbox h1 {
+        text-decoration: underline solid;
+        font-size: 18px;
+        margin: 5px;
+    }
+
+    .Monthbox li {
+        text-align: left;
+    }
+
+/*Bottom Left Section CSS Styles*/
+.validation {
+    grid-area: bottomleft;
+}
+
+    .validation h1 {
+        text-align: center;
+        font-size: 24px;
+    }
+
+/*Bottom Right Section CSS Styles*/
+.courseFinder {
+    grid-area: bottomright;
+}
+
+thead {
+    background-color: #264653;
+    color: aliceblue;
+}
+
+tbody {
+    color: #2a9d8f;
+}

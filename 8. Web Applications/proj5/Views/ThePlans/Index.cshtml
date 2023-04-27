@@ -1,0 +1,77 @@
+﻿@model IEnumerable<Project53.Areas.Identity.Data.ThePlan>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Name)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.IsDefault)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CatYearNavigation)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DmajorNavigation)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DminorNavigation)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.MajorNavigation)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.MinorNavigation)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.UserNavigation)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.IsDefault)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CatYearNavigation.Year)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DmajorNavigation.Name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DminorNavigation.Name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.MajorNavigation.Name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.MinorNavigation.Name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.UserNavigation.Name)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
