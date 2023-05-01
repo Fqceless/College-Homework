@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-configuration PUBLIC
+"-//Hibernate/Hibernate Configuration DTD//EN"
+"http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+
+<hibernate-configuration>
+<session-factory>
+<property name="hibernate.connection.driver_class">com.microsoft.sqlserver.jdbc.SQLServerDriver</property>
+<property name="hibernate.connection.url">jdbc:sqlserver://163.11.239.89:1433;database=MLB</property>
+<property name="hibernate.connection.username">deez</property>
+<property name="hibernate.connection.password">nuts</property>
+<property name="hibernate.connection.pool_size">1</property>
+<property name="hibernate.default_catalog">dbo</property>
+<property name="show_sql">false</property>
+<property name="dialect">org.hibernate.dialect.SQLServer2008Dialect</property>
+<property name="hibernate.current_session_context_class">thread</property>
+
+<mapping class="bo.Player"/>
+<mapping class="bo.PlayerSeason" />
+<mapping class="bo.BattingStats" />
+<mapping class="bo.CatchingStats" />
+<mapping class="bo.FieldingStats" />
+<mapping class="bo.PitchingStats" />
+<mapping class="bo.Team" />
+<mapping class="bo.TeamSeason" />
+</session-factory>
+</hibernate-configuration>
+

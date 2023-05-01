@@ -1,0 +1,16 @@
+html {
+ margin:0;
+ padding:0;
+ font:normal normal normal 18px/24px 'Comic Sans';
+ font-family: "Comic Sans MS", "Comic Sans", cursive;
+ color:#333;
+}
+body {
+ background-color:yellowgreen;
+}
+a {
+    color: blue;
+}
+a:hover{
+    color:purple;
+}
