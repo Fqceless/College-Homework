@@ -1,0 +1,35 @@
+.root {
+  border: 2px solid #39055a;
+  border-radius: 5px;
+  box-shadow: 2.83px 2.83px 2px #2e0438;
+  display: block;
+  
+  max-height: 350px;
+  overflow: scroll;
+}
+.CatalogTable {
+  overflow: none;
+  font-size: auto;
+  width: 100%;
+  height: initial;
+  background-color: rgba(203, 144, 239, 0.294);
+  th, td {
+    text-align: left; /* Left-align text */
+    padding: 12px; /* Add padding */
+  }
+  tr:hover {
+    /* Add a grey background color to the table header and on hover */
+    background-color: #f1f1f1;
+  }
+  border-collapse: collapse; /* Collapse borders */
+  width: 100%; /* Full-width */
+  border: 1px solid #ddd; /* Add a grey border */
+  font-size: 18px; /* Increase font-size */
+}
+.myInput {
+  width: 100%; /* Full-width */
+  font-size: 16px; /* Increase font-size */
+  padding: 18px 20px 12px 40px; /* Add some padding */
+  border: 1px solid rgb(106, 3, 119); /* Add a grey border */
+  margin-bottom: 12px; /* Add some space below the input */
+}

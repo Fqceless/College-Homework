@@ -1,0 +1,12 @@
+.root {display: block;
+    overflow: scroll;
+    max-height: 500px;
+}
+.container {
+    width: 600px;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 20px 15px;
+    overflow: inherit;
+    max-height: inherit;
+}

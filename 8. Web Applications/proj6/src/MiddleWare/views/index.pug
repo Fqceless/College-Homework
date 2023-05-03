@@ -1,0 +1,111 @@
+extends layout
+
+block content
+  var h1Title = "SQL Queries"
+  #main
+    h1 h1Title 
+    #mainTable 
+      table
+        thead
+          th SQL Query Home 
+        //thead
+        tbody 
+            tr 
+              td
+                - var url = "/users" 
+                form(action=url method="GET")
+                  .form
+                    input(type= "hidden")
+                    input(type= "submit" value= "To Users")
+                //form
+              //td
+            //tr
+        //tbody
+        tbody 
+            tr 
+              td
+                - var url = "/plans/id=420" 
+                form(action=url method="GET")
+                  .form
+                    input(type= "hidden")
+                    input(type= "submit" value = "To Id Plans")
+                //form
+              //td
+            //tr
+        //tbody
+        tbody 
+            tr 
+              td
+                - var url = "/plans/name=chris" 
+                form(action=url method="GET")
+                  .form
+                    input(type= "hidden")
+                    input(type= "submit" value = "To User Plans")
+                //form
+              //td
+            //tr
+        //tbody
+        tbody 
+            tr 
+              td
+                - var url = "/courses/year=2022" 
+                form(action=url method="GET")
+                  .form
+                    input(type= "hidden")
+                    input(type= "submit" value = "To catCourses")
+                //form
+              //td
+            //tr
+        //tbody
+        tbody 
+            tr 
+              td
+                - var url = "/courses/pid=420" 
+                form(action=url method="GET")
+                  .form
+                    input(type= "hidden")
+                    input(type= "submit" value = "To plannedCourses")
+                //form
+              //td
+            //tr
+        //tbody
+        tbody 
+            tr 
+              td
+                - var url = "/reqs/major=Computer Science" 
+                form(action=url method="GET")
+                  .form
+                    input(type= "hidden")
+                    input(type= "submit" value = "To Major Reqs")
+                //form
+              //td
+            //tr
+        //tbody
+        //tbody
+        tbody 
+            tr 
+              td
+                - var url = "/reqs/minor=Math" 
+                form(action=url method="GET")
+                  .form
+                    input(type= "hidden")
+                    input(type= "submit" value = "To Minor Reqs")
+                //form
+              //td
+            //tr
+        //tbody
+        tbody 
+            tr 
+              td
+                - var url = "/reqs/geneds" 
+                form(action=url method="GET")
+                  .form
+                    input(type= "hidden")
+                    input(type= "submit" value = "To Gened Reqs")
+                //form
+              //td
+            //tr
+        //tbody
+      //table
+  //main
+                

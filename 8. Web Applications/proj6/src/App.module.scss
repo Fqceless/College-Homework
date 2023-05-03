@@ -1,0 +1,88 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.Organizer {
+  background-image: url('https://i.pinimg.com/736x/70/e1/b6/70e1b6a21728aa677acd08738518915b.jpg');
+  color: #270060;
+  display: grid;
+  grid-template-areas:
+    'header'
+    'UL UR'
+    'BL BR';
+  grid-template-rows: 1fr 4fr;
+}
+.UL {
+  display: grid;
+  grid-auto-flow: column;
+  align-self: start;
+}
+.UR {
+  display: grid;
+}
+.MainBody {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 5px;
+  overflow: scroll;
+  flex-grow: 10;
+}
+
+.Planner {
+  display: none;
+}
+.FacultyPage {
+  width: 50%;
+  position: relative;
+  top: 20%;
+  left: 25vw;
+  right: auto;
+  display: none;
+}
+
+.LoginOrginizer {
+  display: grid;
+  margin: 3px;
+  padding: 3px;
+  grid-template-rows: 1fr 4fr;
+  grid-template-columns: none;
+  text-align: center;
+}
+.LoginForm {
+  display: block;
+}

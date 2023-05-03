@@ -1,0 +1,41 @@
+.root {
+  display: grid;
+  grid-template-columns: auto;
+  font-size: 120%;
+}
+.Header {
+  display: grid;
+  grid-template-areas: 'headerInfo headerInfo studentInfo studentInfo headerButtons';
+  border: 5px double #39055a;
+  border-radius: 5px;
+  grid-template-columns: 3fr 2fr 1fr;
+}
+.headerInfo {
+  overflow: inherit;
+  align-self: start;
+  h1 {
+    font-size: 60pt;
+    padding: 0px;
+    margin: 0px;
+  }
+  display: block;
+  grid-template-columns: none;
+}
+.studentInfo {
+  display: grid;
+  grid-template-areas:
+    'infoStudent infoMajor'
+    'infoBottom infoMinor';
+}
+.headerButtons {
+  position: absolute;
+  right: 10px;
+  overflow: inherit;
+  min-width: 50px;
+  min-height: 50px;
+}
+.ChoosePlan {
+  flex-grow: 4;
+  background-color: rgba(94, 7, 130, 0.33);
+  font-size: 150%;
+}

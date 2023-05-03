@@ -1,0 +1,26 @@
+extends layout
+
+block content
+  -var h1Title = "Users"
+  #main
+    h1 h1Title 
+
+    table 
+        thead 
+          th userName
+          th userPass
+          th userType
+        //thead
+        tbody 
+          each user in users
+            tr 
+              td= user.name
+              td= user.password
+              td= user.type
+            //tr
+          //each
+        //tbody
+      //table
+    
+  //main
+                

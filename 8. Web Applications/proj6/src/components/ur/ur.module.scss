@@ -1,0 +1,50 @@
+.root {
+  display: block;
+  margin: 5px;
+  overflow: scroll;
+}
+.GridSchedule {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.Semester {
+  background-color: rgba(203, 144, 239, 0.294);
+  font-weight: 500;
+  border: 2px solid #39055a;
+  border-radius: 5px;
+  box-shadow: 2.83px 2.83px 2px #2e0438;
+  margin: 4px;
+  padding: 5px;
+}
+.Notes {
+  margin: 3px;
+  border: 3px solid #3a0556;
+  display: flex;
+  border-radius: 3px;
+  label {
+    background-color: rgba(203, 144, 239, 0.294);
+    padding: 3px;
+    font-size: larger;
+    font-weight: 800;
+    display: flex;
+    flex-grow: 1;
+    border-radius: inherit;
+    textarea {
+      font-family: BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Fira Sans',
+        'Droid Sans', 'Helvetica Neue', sans-serif;
+      font-size: medium;
+      border: 3px solid #3a0556;
+      background-color: rgb(224, 197, 240);
+      border-radius: inherit;
+      margin: 3px;
+      flex-grow: 1;
+    }
+    button {
+      border: 3px solid #3a0556;
+      background-color: rgba(203, 144, 239, 0.294);
+      padding: 3px;
+      margin: 3px;
+      border-radius: inherit;
+    }
+  }
+}
